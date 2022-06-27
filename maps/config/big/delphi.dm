@@ -1,10 +1,6 @@
-#ifdef XMAS
-INCLUDE_MAP("../delphi.dmm")
-#else
-INCLUDE_MAP("../delphi.dmm")
-#endif
-INCLUDE_MAP("../z2.dmm")
-INCLUDE_MAP("../z3.dmm")
+INCLUDE_MAP("../../../+secret/maps/bigmaps/unused/delphi.dmm")
+INCLUDE_MAP("../../../+secret/maps/bigmaps/z2.dmm")
+INCLUDE_MAP("../../../+secret/maps/bigmaps/z3.dmm")
 #include "z4.dm"
-INCLUDE_MAP("../z5.dmm")
+INCLUDE_MAP("../../../+secret/maps/bigmaps/z5.dmm")
 #define MAP_MODE "extended"

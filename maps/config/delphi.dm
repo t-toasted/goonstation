@@ -1,7 +1,7 @@
 #ifdef XMAS
-INCLUDE_MAP("../delphi.dmm")
+INCLUDE_MAP("../unused/delphi.dmm")
 #else
-INCLUDE_MAP("../delphi.dmm")
+INCLUDE_MAP("../unused/delphi.dmm")
 #endif
 INCLUDE_MAP("../z2.dmm")
 INCLUDE_MAP("../z3.dmm")
