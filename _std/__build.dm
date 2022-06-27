@@ -109,7 +109,7 @@ o+`        `-` ``..-:yooos-..----------..`
 //#define MAP_OVERRIDE_CRASH			// Stupid Crash Gimmick Map
 //#define MAP_OVERRIDE_ATLAS			// gannetmap OR IS IT KUBIUSGANNETMAP??
 //#define MAP_OVERRIDE_MANTA			// manta map
-//#define MAP_OVERRIDE_DEPLHI     // Artic Thing Map
+//#define MAP_OVERRIDE_DELPHI     // Artic Thing Map
 //#define MAP_OVERRIDE_DENSITY
 //#define MAP_OVERRIDE_KONDARU
 //#define MAP_OVERRIDE_OZYMANDIAS

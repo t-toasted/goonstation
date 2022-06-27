@@ -25,6 +25,9 @@
 #elif defined(MAP_OVERRIDE_TRUNKMAP)
 
 
+#elif defined(MAP_OVERRIDE_DELPHI)
+
+
 #elif defined(MAP_OVERRIDE_CHIRON)
 
 
