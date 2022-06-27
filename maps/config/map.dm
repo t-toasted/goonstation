@@ -33,6 +33,9 @@
 #elif defined(MAP_OVERRIDE_TRUNKMAP)
 #include "big/trunkmap.dm"
 
+#elif defined(MAP_OVERRIDE_DELPHI)
+#include "big/delphi.dm"
+
 #elif defined(MAP_OVERRIDE_CHIRON)
 #include "big/chiron.dm"
 
