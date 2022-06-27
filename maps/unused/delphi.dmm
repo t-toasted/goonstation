@@ -18,6 +18,22 @@
 	name = "steel plating"
 	},
 /area/space)
+"e" = (
+/obj/decal/cleanable/dirt/dirt2,
+/obj/decal/cleanable/blood/drip/med,
+/turf/simulated/floor,
+/area/space)
+"g" = (
+/obj/decal/cleanable/dirt/dirt4,
+/turf/simulated/floor,
+/area/space)
+"j" = (
+/obj/decal/cleanable/blood/tracks,
+/turf/simulated/floor/plating{
+	desc = " It is made of steel.";
+	name = "steel plating"
+	},
+/area/space)
 "k" = (
 /turf/unsimulated/floor/arctic/snow/lake,
 /area/space)
@@ -36,10 +52,50 @@
 	name = "steel plating"
 	},
 /area/space)
+"v" = (
+/obj/decal/cleanable/dirt/dirt2,
+/turf/simulated/floor,
+/area/space)
+"w" = (
+/obj/decal/fakeobjects/safehouse/dead_exec/bloody,
+/obj/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/space)
+"x" = (
+/obj/decal/cleanable/blood/tracks,
+/turf/simulated/floor,
+/area/space)
+"z" = (
+/obj/decal/cleanable/dirt/dirt4,
+/obj/decal/cleanable/blood/dynamic/tracks,
+/turf/simulated/floor,
+/area/space)
 "E" = (
 /turf/simulated/wall/auto/reinforced/supernorn{
 	icon_state = "norn-R-12"
 	},
+/area/space)
+"G" = (
+/obj/decal/cleanable/dirt/dirt2,
+/obj/decal/cleanable/dirt/dirt4,
+/turf/simulated/floor,
+/area/space)
+"K" = (
+/obj/decal/cleanable/blood/drip/high,
+/turf/simulated/floor,
+/area/space)
+"L" = (
+/obj/decal/cleanable/blood/drip,
+/turf/simulated/floor/snowrough,
+/area/space)
+"M" = (
+/obj/fluid_spawner/polluted_filth/blood,
+/turf/unsimulated/floor/arctic/snow/lake,
+/area/space)
+"P" = (
+/turf/simulated/floor,
 /area/space)
 "U" = (
 /obj/landmark/start{
@@ -56,6 +112,10 @@
 	desc = " It is made of steel.";
 	name = "steel plating"
 	},
+/area/space)
+"Z" = (
+/obj/storage/crate/bloody,
+/turf/simulated/floor,
 /area/space)
 
 (1,1,1) = {"
@@ -38556,9 +38616,9 @@ a
 a
 a
 a
-a
-a
-a
+c
+c
+c
 a
 a
 a
@@ -38853,14 +38913,14 @@ a
 a
 a
 E
-c
+w
 c
 c
 c
 a
+c
 a
-a
-a
+c
 p
 a
 a
@@ -39155,14 +39215,14 @@ a
 a
 a
 E
+Z
+x
+j
 u
-u
-u
-u
+L
 a
 a
-a
-a
+c
 p
 a
 a
@@ -39457,14 +39517,14 @@ a
 a
 a
 E
-u
-u
+P
+P
 u
 u
 s
 a
 a
-a
+c
 p
 a
 a
@@ -39759,14 +39819,14 @@ a
 a
 a
 E
-u
-u
+P
+v
 Y
 u
 a
 a
 a
-a
+c
 p
 a
 a
@@ -40061,14 +40121,14 @@ a
 a
 a
 E
-u
-u
+P
+P
 u
 d
+P
 a
 a
-a
-a
+c
 p
 a
 a
@@ -40363,14 +40423,14 @@ a
 a
 a
 E
-u
-u
+P
+P
 U
-u
+P
+P
+P
 a
-a
-a
-a
+c
 p
 a
 a
@@ -40665,14 +40725,14 @@ a
 a
 a
 E
-u
-u
-u
-u
-a
-a
-a
-a
+P
+P
+P
+g
+G
+P
+P
+c
 p
 a
 a
@@ -40967,14 +41027,14 @@ a
 a
 a
 E
-u
-u
-u
-u
-a
-a
-a
-a
+P
+P
+K
+e
+v
+g
+P
+c
 p
 a
 a
@@ -41272,11 +41332,11 @@ E
 c
 c
 c
-u
-a
-a
-a
-a
+z
+c
+c
+g
+c
 a
 a
 a
@@ -41576,9 +41636,9 @@ a
 a
 a
 a
-a
-a
-a
+c
+c
+c
 a
 a
 a
@@ -42480,7 +42540,7 @@ a
 a
 a
 k
-k
+M
 k
 k
 k
