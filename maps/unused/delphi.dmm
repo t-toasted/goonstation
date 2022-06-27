@@ -1,12 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/landmark/map{
-	name = "DELPHI"
-	},
 /turf/simulated/floor/snowrough,
 /area/space)
 "b" = (
-/obj/landmark/map,
+/obj/landmark/map{
+	name = "DELPHI"
+	},
 /turf/simulated/floor/snowrough,
 /area/space)
 "c" = (
