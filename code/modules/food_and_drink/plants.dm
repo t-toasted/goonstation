@@ -928,13 +928,44 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 	edible = 0
 	food_color = "#CC6600"
 	validforhat = 1
+	var/carvestate = 0
 
 	attackby(obj/item/W, mob/user)
-		if (iscuttingtool(W))
-			user.visible_message("[user] carefully and creatively carves [src].", "You carefully and creatively carve [src]. Spooky!")
-			var/obj/item/clothing/head/pumpkin/P = new /obj/item/clothing/head/pumpkin(user.loc)
-			P.name = "carved [src.name]"
-			qdel(src)
+		if(iscuttingtool(W))
+			switch(carvestate)
+				if(0)
+					boutput(user, "<span class='notice'>You cut the top off of [src].</span>")
+					var/obj/item/reagent_containers/food/snacks/plant/pumpkintopped/D = new /obj/item/reagent_containers/food/snacks/plant/pumpkintopped(W.loc)
+					qdel(src)
+					carvestate++
+				if(1)
+					boutput(user, "<span class='notice'>You scoop the guts out of [src].</span>")
+					var/obj/item/reagent_containers/food/snacks/plant/pumpkinbowl/D = new /obj/item/reagent_containers/food/snacks/plant/pumpkinbowl(W.loc)
+					qdel(src)
+					carvestate++
+				if(2)
+					user.visible_message("[user] carefully and creatively carves [src].", "You carefully and creatively carve [src]. Spooky!")
+					var/obj/item/clothing/head/pumpkin/P = new /obj/item/clothing/head/pumpkin(user.loc)
+					P.name = "carved [src.name]"
+					qdel(src)
+					carvestate++
+				else
+
+/obj/item/reagent_containers/food/snacks/plant/pumpkintopped
+	name = "opened pumpkin"
+	desc = "An opened pumpkin. It has yet to be hollowed out."
+	icon_state = "pumpkintopped"
+	edible = 0
+	food_color = "#CC6600"
+	var/carvestate = 1
+
+/obj/item/reagent_containers/food/snacks/plant/pumpkinbowl
+	name = "pumpkin bowl"
+	desc = "A hollowed out pumpkin. Can be used for holding liquids, or for carving!"
+	icon_state = "pumpkinbowl"
+	edible = 0
+	food_color = "#CC6600"
+	var/carvestate = 2
 
 /obj/item/reagent_containers/food/snacks/plant/pumpkin/summon
 	New()
