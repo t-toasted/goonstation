@@ -936,19 +936,25 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 				if(0)
 					boutput(user, "<span class='notice'>You cut the top off of [src].</span>")
 					var/obj/item/reagent_containers/food/snacks/plant/pumpkintopped/D = new /obj/item/reagent_containers/food/snacks/plant/pumpkintopped(W.loc)
+					user.u_equip(W)
+					user.put_in_hand_or_drop(D)
+					qdel(W)
 					qdel(src)
-					carvestate++
+					carvestate = 1
 				if(1)
 					boutput(user, "<span class='notice'>You scoop the guts out of [src].</span>")
 					var/obj/item/reagent_containers/food/snacks/plant/pumpkinbowl/D = new /obj/item/reagent_containers/food/snacks/plant/pumpkinbowl(W.loc)
+					user.u_equip(W)
+					user.put_in_hand_or_drop(D)
+					qdel(W)
 					qdel(src)
-					carvestate++
+					carvestate = 2
 				if(2)
 					user.visible_message("[user] carefully and creatively carves [src].", "You carefully and creatively carve [src]. Spooky!")
 					var/obj/item/clothing/head/pumpkin/P = new /obj/item/clothing/head/pumpkin(user.loc)
 					P.name = "carved [src.name]"
 					qdel(src)
-					carvestate++
+					carvestate = 3
 				else
 
 /obj/item/reagent_containers/food/snacks/plant/pumpkintopped
