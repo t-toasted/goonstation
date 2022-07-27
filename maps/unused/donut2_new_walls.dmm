@@ -6831,6 +6831,9 @@
 	icon_state = "chair_couch-green";
 	name = "ratty green couch"
 	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/north)
 "aqW" = (
@@ -7634,6 +7637,9 @@
 /obj/stool/chair/yellow{
 	dir = 4
 	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/north)
 "asS" = (
@@ -7675,6 +7681,9 @@
 	},
 /obj/decoration/toiletholder{
 	pixel_y = -7
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/toilets)
@@ -8792,6 +8801,9 @@
 /obj/window/reinforced{
 	dir = 2;
 	icon_state = "rwindow"
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/toilets)
@@ -13045,6 +13057,9 @@
 	icon_state = "chair_pool"
 	},
 /obj/item/clothing/glasses/sunglasses/tanning,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "aFV" = (
@@ -13055,6 +13070,9 @@
 	},
 /obj/item/reagent_containers/food/drinks/water,
 /obj/item/clothing/glasses/sunglasses/tanning,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/white,
 /area/station/crew_quarters/pool)
 "aFW" = (
@@ -13516,6 +13534,9 @@
 "aHa" = (
 /obj/stool/chair{
 	dir = 4
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/quarters)
@@ -15954,6 +15975,9 @@
 /obj/stool/chair{
 	dir = 4
 	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
 "aMF" = (
@@ -15969,6 +15993,9 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/arcade)
@@ -19073,6 +19100,9 @@
 "aUC" = (
 /obj/stool/chair/blue{
 	dir = 1
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
 /turf/simulated/floor/bluewhite,
 /area/station/medical/medbay/lobby)
@@ -26596,10 +26626,16 @@
 	pixel_y = 0
 	},
 /obj/stool,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/market)
 "bmX" = (
 /obj/stool,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/market)
 "bmY" = (
@@ -27627,6 +27663,9 @@
 	icon_state = "tube1"
 	},
 /obj/stool,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/bar)
 "bpn" = (
@@ -34789,6 +34828,9 @@
 	dir = 8;
 	icon_state = "ringrope"
 	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/specialroom/gym,
 /area/station/crew_quarters/fitness)
 "bGj" = (
@@ -38200,6 +38242,9 @@
 "eQM" = (
 /obj/item/clothing/shoes/moon,
 /obj/decal/cleanable/blood,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
 /turf/simulated/floor/plating,
 /area/station/maintenance/north)
 "eRF" = (
@@ -40107,12 +40152,11 @@
 /turf/simulated/floor/carpet/arcade,
 /area/station/crew_quarters/captain)
 "inn" = (
-/obj/stool,
-/obj/bookshelf/persistent,
-/turf/simulated/floor/specialroom/chapel{
-	dir = 10
+/obj/landmark/start{
+	name = "Staff Assistant"
 	},
-/area/station/chapel/sanctuary)
+/turf/simulated/pool/no_animate,
+/area/station/crew_quarters/pool)
 "inq" = (
 /obj/disposalpipe/switch_junction{
 	dir = 4;
@@ -40627,6 +40671,13 @@
 	},
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
+"jeA" = (
+/obj/stool,
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
 "jfc" = (
 /obj/cable,
 /obj/machinery/power/solar/alt,
@@ -41200,6 +41251,15 @@
 	},
 /turf/simulated/floor,
 /area/station/science/lobby)
+"kpo" = (
+/obj/machinery/bathtub{
+	anchored = 1
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
+/turf/simulated/floor/sanitary,
+/area/station/crew_quarters/locker)
 "kpr" = (
 /obj/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
@@ -45279,6 +45339,17 @@
 /obj/landmark/gps_waypoint,
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/bar)
+"rwm" = (
+/obj/stool/chair{
+	dir = 8
+	},
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
+/turf/simulated/floor/wood{
+	icon_state = "0,6"
+	},
+/area/station/crew_quarters/fitness)
 "rze" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -47698,6 +47769,12 @@
 	},
 /turf/simulated/floor/white,
 /area/station/science/lab)
+"vvO" = (
+/obj/landmark/start{
+	name = "Staff Assistant"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/hangar/main)
 "vye" = (
 /obj/cable/black{
 	icon_state = "4-8"
@@ -71122,7 +71199,7 @@ nMC
 bjo
 bkb
 bli
-blh
+jeA
 bmU
 bli
 bfs
@@ -71729,7 +71806,7 @@ bli
 jzo
 bli
 bli
-blh
+jeA
 bpm
 blh
 bli
@@ -72870,7 +72947,7 @@ ipa
 arN
 asx
 aAP
-atz
+kpo
 aue
 auQ
 aAP
@@ -83156,7 +83233,7 @@ aFb
 aFT
 mjN
 aHv
-aIb
+inn
 aIb
 aJw
 aHs
@@ -84652,7 +84729,7 @@ asi
 ydP
 asm
 eQM
-apk
+vvO
 ayh
 ayk
 sFr
@@ -87393,7 +87470,7 @@ aJC
 aJC
 aNr
 aNY
-aQd
+rwm
 aPu
 aQd
 aNY
@@ -89790,7 +89867,7 @@ avj
 avj
 avj
 avj
-inn
+aAu
 axA
 aCa
 aCP
