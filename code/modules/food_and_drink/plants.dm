@@ -938,7 +938,6 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 					var/obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl/D = new /obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl(W.loc)
 					user.u_equip(W)
 					user.put_in_hand_or_drop(D)
-					qdel(W)
 					qdel(src)
 					carvestate = 1
 				if(1)
@@ -948,14 +947,6 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 					qdel(src)
 					carvestate = 2
 				else
-
-/obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl
-	name = "pumpkin bowl"
-	desc = "A hollowed out pumpkin. Can be used for holding liquids, or for carving!"
-	icon_state = "pumpkinbowl"
-	edible = 0
-	food_color = "#CC6600"
-	var/carvestate = 1
 
 /obj/item/reagent_containers/food/snacks/plant/pumpkin/summon
 	New()

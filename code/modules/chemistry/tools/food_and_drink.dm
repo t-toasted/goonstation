@@ -1867,10 +1867,12 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks)
 	icon_state = "pumpkinbowl"
 	item_state = "zippo"
 	g_amt = 30
-	fluid_image = "fluid-pumpkinbowl"
 	initial_volume = 50
 	can_recycle = FALSE
 	initial_reagents = list("juice_pumpkin"=30)
+	New()
+		src.fluid_image = image(icon=src.icon,icon_state="fluid_pumpkinbowl")
+		..()
 
 /obj/item/reagent_containers/food/drinks/energyshake
 	name = "Brotein Shake - Dragon Balls flavor"
