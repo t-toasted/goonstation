@@ -1860,13 +1860,14 @@ ABSTRACT_TYPE(/obj/item/reagent_containers/food/snacks)
 	can_recycle = FALSE
 	initial_reagents = list("coconut_milk"=20)
 
-/obj/item/reagent_containers/food/drinks/pumpkinbowl
+/obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl
 	name = "Pumpkin Bowl"
 	desc = "Aww, it's all hallowed out."
 	icon = 'icons/obj/foodNdrink/drinks.dmi'
 	icon_state = "pumpkinbowl"
 	item_state = "zippo"
 	g_amt = 30
+	fluid_image = "fluid-pumpkinbowl"
 	initial_volume = 50
 	can_recycle = FALSE
 	initial_reagents = list("juice_pumpkin"=30)

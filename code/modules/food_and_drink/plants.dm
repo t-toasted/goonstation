@@ -935,7 +935,7 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 			switch(carvestate)
 				if(0)
 					boutput(user, "<span class='notice'>You carefully cut open and hollow out the [src].</span>")
-					var/obj/item/reagent_containers/food/drinks/pumpkinbowl/D = new /obj/item/reagent_containers/food/drinks/pumpkinbowl(W.loc)
+					var/obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl/D = new /obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl(W.loc)
 					user.u_equip(W)
 					user.put_in_hand_or_drop(D)
 					qdel(W)
@@ -949,7 +949,7 @@ ABSTRACT_TYPE(/obj/item/reagent/containers/food/snacks/plant)
 					carvestate = 2
 				else
 
-/obj/item/reagent_containers/food/drinks/pumpkinbowl
+/obj/item/reagent_containers/food/drinks/bowl/pumpkinbowl
 	name = "pumpkin bowl"
 	desc = "A hollowed out pumpkin. Can be used for holding liquids, or for carving!"
 	icon_state = "pumpkinbowl"
