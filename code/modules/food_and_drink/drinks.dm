@@ -246,6 +246,35 @@
 	can_recycle = FALSE
 	initial_reagents = list("chickensoup"=30)
 
+/obj/item/reagent_containers/food/drinks/bobatea
+	name = "Boba Tea"
+	desc = "Milk and 'fruit' of undetermined origin; finally, together at last."
+	icon_state = "bobatea"
+	initial_volume = 50
+	can_recycle = TRUE
+	initial_reagents = list("milk"=25, "tea"=25)
+
+	var/image/fluid_image
+
+	on_reagent_change()
+		..()
+		src.UpdateIcon()
+
+	update_icon()
+		src.underlays = null
+		if (reagents.total_volume)
+			var/fluid_state = round(clamp((src.reagents.total_volume / src.reagents.maximum_volume * 3 + 1), 1, 3))
+			if (!src.fluid_image)
+				src.fluid_image = image(src.icon, "fluid-bobatea[fluid_state]", -1)
+			else
+				src.fluid_image.icon_state = "fluid-bobatea[fluid_state]"
+			src.icon_state = "bobatea[fluid_state]"
+			var/datum/color/average = reagents.get_average_color()
+			src.fluid_image.color = average.to_rgba()
+			src.underlays += fluid_image
+		else
+			src.icon_state = "bobatea"
+
 /obj/item/reagent_containers/food/drinks/fruitmilk
 	name = "Creaca's Fruit Milk "
 	desc = "Milk and 'fruit' of undetermined origin; finally, together at last."
