@@ -1107,7 +1107,7 @@
 	max_amt2spawn = 6
 	items2spawn = list(/obj/critter/domestic_bee,
 	/obj/critter/bat,
-	/mob/living/critter/small_animal/mouse,
+	/obj/critter/mouse,
 	/obj/critter/opossum,
 	/obj/critter/dog/george/blair,
 	/obj/critter/dog/george/orwell,

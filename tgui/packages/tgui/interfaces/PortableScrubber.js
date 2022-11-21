@@ -2,7 +2,6 @@ import { useBackend } from '../backend';
 import { Flex, Section, Button, NumberInput, LabeledList, Divider } from '../components';
 import { Window } from '../layouts';
 import { PortableBasicInfo, PortableHoldingTank } from './common/PortableAtmos';
-import { NoContainer, ReagentGraph } from './common/ReagentInfo';
 
 export const PortableScrubber = (props, context) => {
   const { act, data } = useBackend(context);
@@ -16,13 +15,12 @@ export const PortableScrubber = (props, context) => {
     maxPressure,
     minFlow,
     maxFlow,
-    reagent_container,
   } = data;
 
   return (
     <Window
       width={305}
-      height={450}>
+      height={340}>
       <Window.Content>
         <PortableBasicInfo
           connected={connected}
@@ -56,9 +54,6 @@ export const PortableScrubber = (props, context) => {
         <PortableHoldingTank
           holding={holding}
           onEjectTank={() => act("eject-tank")} />
-        <Section title="Fluid Tank">
-          <ReagentGraph container={reagent_container} />
-        </Section>
       </Window.Content>
     </Window>
   );

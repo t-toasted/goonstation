@@ -4,25 +4,19 @@
 	anchored = TRUE
 	var/datum/minimap/map
 	var/map_path = /datum/minimap/z_level
-	var/map_type = MAP_DEFAULT
 
 	New()
 		. = ..()
-		START_TRACKING
 		map = get_singleton(map_path)
-		vis_contents += map.minimap_render
+		icon = map.map_render
 
-		for (var/atom/movable/marker_object in minimap_marker_targets)
-			SEND_SIGNAL(marker_object, COMSIG_NEW_MINIMAP_MARKER, src)
-
-	disposing()
-		STOP_TRACKING
+	update_icon()
 		. = ..()
+		icon = map.map_render
 
 /obj/minimap/ai
 	name = "AI Station Map"
 	map_path = /datum/minimap/z_level/ai
-	map_type = MAP_AI
 
 	Click(location, control, params)
 		if (!isAI(usr))
@@ -30,8 +24,8 @@
 		var/list/param_list = params2list(params)
 		var/datum/minimap/z_level/ai_map = map
 		if ("left" in param_list)
-			var/x = round((text2num(param_list["icon-x"]) / ai_map.zoom_coefficient) + ai_map.zoom_x_offset)
-			var/y = round((text2num(param_list["icon-y"]) / ai_map.zoom_coefficient) + ai_map.zoom_y_offset)
+			var/x = round((text2num(param_list["icon-x"]) * ai_map.zoom_coefficient) + ai_map.zoom_x_offset)
+			var/y = round((text2num(param_list["icon-y"]) * ai_map.zoom_coefficient) + ai_map.zoom_y_offset)
 			var/turf/clicked = locate(x, y, map.z_level)
 			if (isAIeye(usr))
 				usr.set_loc(clicked)

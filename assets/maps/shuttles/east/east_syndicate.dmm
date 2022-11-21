@@ -116,7 +116,9 @@
 	dir = 8;
 	icon_state = "alt_heater"
 	},
-/turf/unsimulated/wall/auto/adventure/shuttle/dark,
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "12"
+	},
 /area/shuttle/escape/centcom)
 "dC" = (
 /obj/shrub{
@@ -164,7 +166,9 @@
 	dir = 8;
 	icon_state = "alt_heater-R"
 	},
-/turf/unsimulated/wall/auto/adventure/shuttle/dark,
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "7"
+	},
 /area/shuttle/escape/centcom)
 "gL" = (
 /obj/decal/poster/wallsign/danger_highvolt{
@@ -336,6 +340,15 @@
 "oC" = (
 /turf/unsimulated/floor/red,
 /area/shuttle/escape/centcom)
+"pj" = (
+/obj/decal/fakeobjects/shuttleengine{
+	dir = 8;
+	icon_state = "alt_heater-L"
+	},
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "7"
+	},
+/area/shuttle/escape/centcom)
 "pm" = (
 /obj/decal/poster/wallsign/hazard_caution,
 /turf/unsimulated/wall/auto/lead/blue,
@@ -345,6 +358,15 @@
 	dir = 4
 	},
 /turf/unsimulated/floor/circuit/red,
+/area/shuttle/escape/centcom)
+"qb" = (
+/obj/decal/fakeobjects/shuttleengine{
+	dir = 8;
+	icon_state = "alt_heater-R"
+	},
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "3"
+	},
 /area/shuttle/escape/centcom)
 "qx" = (
 /obj/decal/tile_edge/line/black{
@@ -747,7 +769,9 @@
 	dir = 8;
 	icon_state = "alt_heater-M"
 	},
-/turf/unsimulated/wall/auto/adventure/shuttle/dark,
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "3"
+	},
 /area/shuttle/escape/centcom)
 "Gc" = (
 /obj/machinery/light/small/floor,
@@ -861,7 +885,9 @@
 	dir = 8;
 	icon_state = "alt_heater-L"
 	},
-/turf/unsimulated/wall/auto/adventure/shuttle/dark,
+/turf/simulated/wall/auto/shuttle{
+	icon_state = "3"
+	},
 /area/shuttle/escape/centcom)
 "LN" = (
 /obj/decal/fakeobjects{
@@ -1002,7 +1028,10 @@
 /turf/unsimulated/floor/shuttlebay,
 /area/centcom/outside)
 "Sp" = (
-/turf/unsimulated/wall/auto/adventure/shuttle/dark,
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	opacity = 0
+	},
 /area/shuttle/escape/centcom)
 "Te" = (
 /obj/decal/tile_edge/line/orange{
@@ -1275,9 +1304,9 @@ rR
 CC
 Ti
 Sp
-Ls
+pj
 Gb
-gG
+qb
 Sp
 zy
 cl

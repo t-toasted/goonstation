@@ -19,7 +19,6 @@ import { Window } from '../layouts';
    placeholder: string;
    timeout: number;
    title: string;
-   allowEmpty: boolean;
  };
 
 export const TextInputModal = (_, context) => {
@@ -31,18 +30,17 @@ export const TextInputModal = (_, context) => {
     placeholder,
     timeout,
     title,
-    allowEmpty,
   } = data;
   const [input, setInput] = useSharedState(context, 'input', placeholder);
   const [inputIsValid, setInputIsValid] = useSharedState<Validator>(
     context,
     'inputIsValid',
-    { isValid: allowEmpty || !!message, error: null }
+    { isValid: !!message.length, error: null }
   );
   const onType = (event) => {
     event.preventDefault();
     const target = event.target;
-    setInputIsValid(validateInput(target.value, max_length, allowEmpty));
+    setInputIsValid(validateInput(target.value, max_length));
     setInput(target.value);
   };
   // Dynamically changes the window height based on the message.
@@ -120,10 +118,10 @@ const InputArea = (props, context) => {
 };
 
 /** Helper functions */
-const validateInput = (input, max_length, allowEmpty) => {
+const validateInput = (input, max_length) => {
   if (!!max_length && input.length > max_length) {
     return { isValid: false, error: `Too long!` };
-  } else if (input.length === 0 && !allowEmpty) {
+  } else if (input.length === 0) {
     return { isValid: false, error: null };
   }
   return { isValid: true, error: null };

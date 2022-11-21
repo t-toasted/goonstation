@@ -14,17 +14,17 @@
 /area/dmm_suite/clear_area)
 "g" = (
 /obj/storage/crate/packing,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
-/mob/living/critter/small_animal/cockroach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
+/obj/critter/roach,
 /turf/simulated/floor,
 /area/dmm_suite/clear_area)
 "p" = (

@@ -18,7 +18,9 @@
 	health_brute = 30
 	health_burn = 30
 	repair_per_resource = 2
-	use_ai_toggle = FALSE
+
+	///Custom contextActions list so we can handle opening them ourselves
+	var/list/datum/contextAction/contexts = list()
 
 	var/damaged = 0 // used for state management for description showing, as well as preventing drones from screaming about being hit
 
@@ -65,6 +67,14 @@
 			emote("beep")
 			say(pick_string("flockmind.txt", "flockdrone_created"), TRUE)
 		src.flock?.drones_made++
+	var/datum/contextLayout/experimentalcircle/layout = new
+	layout.center = TRUE
+	src.contextLayout = layout
+	src.contexts += new /datum/contextAction/flockdrone/control
+	for (var/type as anything in childrentypesof(/datum/contextAction/flockdrone))
+		if (type == /datum/contextAction/flockdrone/control)
+			continue
+		src.contexts += new type
 	APPLY_ATOM_PROPERTY(src, PROP_MOB_EXAMINE_ALL_NAMES, src)
 	APPLY_ATOM_PROPERTY(src, PROP_ATOM_FLOCK_THING, src)
 	src.AddComponent(/datum/component/flock_protection, FALSE, TRUE, FALSE, FALSE)
@@ -420,16 +430,6 @@
 	else
 		return ..()
 
-/mob/living/critter/flock/drone/DblClick(location, control, params)
-	. = ..()
-	var/mob/living/intangible/flock/F = usr
-	if(istype(F) && F.flock && F.flock == src.flock)
-		var/datum/abilityHolder/flockmind/holder = F.abilityHolder
-		if(holder?.drone_controller.drone == src) //if click behaviour has highlighted this drone for control
-			holder.drone_controller.cast(src) //deselect it
-			F.targeting_ability = null
-		src.take_control(usr)
-
 /mob/living/critter/flock/drone/MouseDrop_T(mob/living/target, mob/user)
 	if(!target || !user)
 		return
@@ -701,11 +701,8 @@
 	if (isflockmob(M)) return
 	if (!isdead(src) && src.flock)
 		if (!src.flock.isEnemy(M))
-			if (src.flock.isIgnored(M))
-				say("[pick_string("flockmind.txt", "flockdrone_betrayal")] [M]", TRUE)
-			else
-				emote("scream")
-				say("[pick_string("flockmind.txt", "flockdrone_enemy")] [M]", TRUE)
+			emote("scream")
+			say("[pick_string("flockmind.txt", "flockdrone_enemy")] [M]", TRUE)
 		src.flock.updateEnemy(M)
 
 /mob/living/critter/flock/drone/bullet_act(var/obj/projectile/P)

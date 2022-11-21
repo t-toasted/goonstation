@@ -737,7 +737,7 @@
 	},
 /area/built_zone)
 "Db" = (
-/obj/machinery/computer/transit_shuttle/mining,
+/obj/machinery/computer/mining_shuttle,
 /turf/simulated/floor/shuttlebay{
 	desc = " It is made of steel.";
 	name = "steel shuttle bay plating"
@@ -49812,8 +49812,8 @@ ay
 ay
 ay
 AG
-jc
 Db
+jc
 AG
 ay
 ay

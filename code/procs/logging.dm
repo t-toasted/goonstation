@@ -74,7 +74,6 @@ var/global/logLength = 0
 			if (LOG_VEHICLE) logs[LOG_VEHICLE] += ingameLog
 			if (LOG_GAMEMODE) logs[LOG_GAMEMODE] += ingameLog
 			if (LOG_TOPIC) logs[LOG_TOPIC] += ingameLog
-			if (LOG_CHEMISTRY) logs[LOG_CHEMISTRY] += ingameLog
 			if (LOG_DIARY)
 				diaryLogging = should_diary_log(diaryType)
 

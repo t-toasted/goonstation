@@ -345,7 +345,7 @@
 	},
 /area/prefab/dreamplaza)
 "kv" = (
-/mob/living/critter/small_animal/cockroach,
+/obj/critter/roach,
 /turf/simulated/floor/purple/checker,
 /area/prefab/dreamplaza)
 "kK" = (

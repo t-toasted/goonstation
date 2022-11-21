@@ -150,6 +150,7 @@
 			if (O in user.contents)
 				continue
 			src.load_item(M)
+			M.set_loc(src)
 			playsound(src, sound_load, 40, 1)
 			sleep(0.5)
 			if (user.loc != staystill) break
@@ -200,7 +201,8 @@
 	proc/load_item(var/obj/item/raw_material/R,var/mob/living/user)
 		if (!R)
 			return
-		if (user)
+		R.set_loc(src)
+		if (user && R)
 			user.u_equip(R)
 			R.dropped(user)
 		add_ore_amount(R.material_name,R.amount,R)
@@ -232,9 +234,7 @@
 		OCD.amount += max(delta,0)
 		if(ore.material)
 			for(var/i in 1 to delta) //make some copies of the material if this is a stack
-				var/datum/material/matCopy = copyMaterial(ore.material)
-				matCopy.owner = null
-				OCD.stats += matCopy
+				OCD.stats += ore.material
 		OCD.amount = round(max(OCD.amount,0)) //floor values to avoid float imprecision
 		ores[material_name] = OCD
 

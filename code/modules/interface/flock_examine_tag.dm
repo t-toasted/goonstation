@@ -11,10 +11,8 @@
 		..()
 		src.examine_tag = new (null, src)
 		src.examine_hover_tag = new (null, src)
-		qdel(src.ex_image)
-		src.ex_image = null
-		qdel(src.ex_hover_image)
-		src.ex_hover_image = null
+		dispose(src.ex_image)
+		dispose(src.ex_hover_image)
 
 	disposing()
 		dispose(src.examine_tag)

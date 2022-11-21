@@ -382,7 +382,6 @@ datum
 					client?.images.Add(override_img)
 					SPAWN (20 SECONDS)
 						client?.images.Remove(override_img)
-						qdel(override_img)
 				..()
 				return
 

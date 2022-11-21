@@ -740,8 +740,6 @@
 			UnsubscribeProcess()
 			SPAWN(0)
 				while (src.update_delay)
-					if(QDELETED(src))
-						return
 					src.update_monitor()
 					sleep(update_delay)
 
@@ -814,7 +812,7 @@
 			if ("percent")
 				return (val * 100)
 			if ("temperature")
-				return "[TO_CELSIUS(val)]&deg;C"
+				return "[val - T0C]&deg;C"
 			if ("round")
 				return round(val)
 

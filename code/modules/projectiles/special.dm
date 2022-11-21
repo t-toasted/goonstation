@@ -433,10 +433,9 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	sname  = "meowitzer"
 	icon = 'icons/misc/critter.dmi'
 	icon_state = "cat1"
-	max_range = 75
-	dissipation_rate = 0
+	dissipation_delay = 75
+	dissipation_rate = 300
 	projectile_speed = 26
-	damage = 10
 	cost = 1
 
 	var/explosive_hits = 1
@@ -460,7 +459,6 @@ ABSTRACT_TYPE(/datum/projectile/special)
 		return
 
 /datum/projectile/special/meowitzer/inert
-	damage = 0
 	explosive_hits = 0
 
 /datum/projectile/special/spewer
@@ -513,8 +511,8 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	brightness = 0
 	sname = "punch"
 	shot_sound = 'sound/impact_sounds/Generic_Swing_1.ogg'
-	max_range = 1
-	dissipation_rate = 0
+	dissipation_delay = 1
+	dissipation_rate = 35
 	impact_image_state = null
 
 	on_hit(atom/hit)
@@ -1042,7 +1040,6 @@ ABSTRACT_TYPE(/datum/projectile/special)
 	icon_state = "extinguish"
 	shot_sound = 'sound/weapons/flamethrower.ogg'
 	stun = 0
-	damage = 0
 	cost = 1
 	damage_type = D_SPECIAL
 	shot_delay = 0.1 SECONDS
