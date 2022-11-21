@@ -19558,7 +19558,7 @@
 /turf/simulated/wall/auto/reinforced/jen,
 /area/station/turret_protected/AIsat)
 "bLT" = (
-/mob/living/critter/small_animal/mouse/remy,
+/obj/critter/mouse/remy,
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
 "bMb" = (

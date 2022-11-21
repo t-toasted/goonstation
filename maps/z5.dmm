@@ -52,15 +52,6 @@
 "aw" = (
 /turf/unsimulated/wall/auto/adventure/martian/exterior,
 /area/noGenerate)
-"ax" = (
-/obj/machinery/light_switch{
-	name = "N light switch";
-	pixel_y = 24
-	},
-/turf/simulated/floor/orangeblack/side{
-	dir = 1
-	},
-/area/mining/hangar)
 "aE" = (
 /obj/item/cigbutt,
 /obj/landmark/artifact,
@@ -168,16 +159,6 @@
 	},
 /turf/simulated/floor/plating/scorched,
 /area/evilreaver/bridge)
-"cm" = (
-/obj/crevice{
-	pixel_x = -28
-	},
-/obj/item/cigbutt,
-/mob/living/critter/small_animal/mouse{
-	name = "Sgt. Pepper"
-	},
-/turf/simulated/floor/plating/damaged3,
-/area/evilreaver/bar)
 "cs" = (
 /obj/lattice{
 	icon_state = "lattice-dir"
@@ -191,19 +172,6 @@
 	},
 /turf/space,
 /area/noGenerate)
-"cB" = (
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/obj/machinery/door/poddoor{
-	density = 0;
-	icon_state = "pdoor0";
-	id = "MINdoorS";
-	name = "South Conveyor Door";
-	opacity = 0
-	},
-/turf/simulated/floor/plating/airless,
-/area/mining/manufacturing)
 "cT" = (
 /obj/effects/background_objects/star_blue{
 	pixel_x = -64;
@@ -260,6 +228,12 @@
 /obj/effects/background_objects/regina,
 /turf/space,
 /area/noGenerate)
+"fh" = (
+/obj/machinery/computer/mining_shuttle{
+	dir = 4
+	},
+/turf/simulated/floor/grime,
+/area/mining/dock)
 "fA" = (
 /obj/decal/fakeobjects/lighttube_broken,
 /obj/decal/cleanable/dirt,
@@ -328,21 +302,6 @@
 	},
 /turf/simulated/martian/floor,
 /area/evilreaver/bridge)
-"hA" = (
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/obj/machinery/door/poddoor{
-	id = "MINdoorS";
-	name = "South Conveyor Door"
-	},
-/obj/forcefield/energyshield/perma/doorlink{
-	desc = "A door-linked force field that prevents gasses from passing through it.";
-	name = "Door-linked Atmospheric Forcefield";
-	powerlevel = 1
-	},
-/turf/simulated/floor/plating,
-/area/mining/manufacturing)
 "hK" = (
 /obj/computerframe{
 	anchored = 1;
@@ -451,12 +410,6 @@
 /obj/critter/martian/soldier,
 /turf/simulated/floor/plating/damaged3,
 /area/evilreaver/security)
-"lp" = (
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/turf/simulated/floor/plating/airless,
-/area/mining/manufacturing)
 "lx" = (
 /obj/indestructible/shuttle_corner{
 	dir = 9;
@@ -1055,6 +1008,10 @@
 /obj/machinery/recharger,
 /turf/simulated/floor/caution/west,
 /area/mining/miningoutpost)
+"qn" = (
+/obj/grille/steel,
+/turf/simulated/floor/plating/airless,
+/area/station/solar/small_backup3)
 "qo" = (
 /turf/simulated/floor/orangeblack/side{
 	dir = 8
@@ -1502,6 +1459,11 @@
 	name = "reinforced plating"
 	},
 /area/mining/refinery)
+"sS" = (
+/obj/decal/cleanable/dirt,
+/obj/machinery/computer/shuttle_bus,
+/turf/simulated/floor/plating/damaged3,
+/area/mining/miningoutpost)
 "sT" = (
 /obj/critter/martian/soldier,
 /turf/simulated/floor/plating/damaged3,
@@ -1973,6 +1935,16 @@
 	},
 /turf/simulated/floor/caution/south,
 /area/mining/miningoutpost)
+"vW" = (
+/obj/crevice{
+	pixel_x = -28
+	},
+/obj/item/cigbutt,
+/obj/critter/mouse{
+	name = "Sgt. Pepper"
+	},
+/turf/simulated/floor/plating/damaged3,
+/area/evilreaver/bar)
 "vX" = (
 /obj/decal/fakeobjects/pipe{
 	dir = 4
@@ -2144,6 +2116,12 @@
 /obj/lattice,
 /turf/simulated/martian/floor,
 /area/evilreaver/storage/tools)
+"wL" = (
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/turf/simulated/floor/plating/airless,
+/area/mining/manufacturing)
 "wO" = (
 /obj/rail{
 	dir = 8;
@@ -2779,6 +2757,12 @@
 /obj/landmark/spawner/loot,
 /turf/simulated/floor/airless/plating/damaged2,
 /area/noGenerate)
+"Av" = (
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/turf/simulated/floor/plating/airless,
+/area/mining/mainasteroid)
 "Aw" = (
 /obj/storage/closet/coffin,
 /turf/simulated/floor/carpet/grime,
@@ -2999,12 +2983,6 @@
 /obj/machinery/manufacturer/mining,
 /turf/simulated/floor,
 /area/mining/manufacturing)
-"BH" = (
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/turf/simulated/floor/plating/airless,
-/area/mining/mainasteroid)
 "BJ" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -3277,6 +3255,13 @@
 	dir = 1
 	},
 /area/evilreaver/security)
+"Dy" = (
+/obj/plasticflaps,
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/turf/simulated/floor/plating,
+/area/mining/manufacturing)
 "Dz" = (
 /obj/machinery/camera{
 	c_tag = "autotag";
@@ -3573,6 +3558,16 @@
 /obj/storage/secure/closet/engineering/mining,
 /turf/simulated/floor/grime,
 /area/mining/magnet_control)
+"FA" = (
+/obj/machinery/light_switch{
+	name = "N light switch";
+	pixel_y = 24
+	},
+/obj/machinery/computer/shuttle_bus,
+/turf/simulated/floor/orangeblack/side{
+	dir = 1
+	},
+/area/mining/hangar)
 "FD" = (
 /obj/lattice{
 	icon_state = "lattice-dir"
@@ -3724,12 +3719,6 @@
 /obj/critter/martian/warrior,
 /turf/simulated/martian/floor,
 /area/evilreaver/bridge)
-"Gq" = (
-/obj/machinery/computer/transit_shuttle/mining{
-	dir = 4
-	},
-/turf/simulated/floor/grime,
-/area/mining/dock)
 "Gr" = (
 /obj/lattice,
 /obj/item/device/infra_sensor,
@@ -4032,16 +4021,6 @@
 /obj/critter/martian/warrior/dead,
 /turf/simulated/martian/floor,
 /area/evilreaver/bridge)
-"Ij" = (
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/obj/decal/cleanable/gangtag{
-	icon_state = "gangtag12";
-	pixel_x = 28
-	},
-/turf/simulated/floor,
-/area/mining/manufacturing)
 "Im" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -4880,6 +4859,21 @@
 /obj/machinery/light/incandescent,
 /turf/simulated/floor/delivery,
 /area/mining/hangar)
+"Nu" = (
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/obj/machinery/door/poddoor{
+	id = "MINdoorS";
+	name = "South Conveyor Door"
+	},
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/turf/simulated/floor/plating,
+/area/mining/manufacturing)
 "Ny" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -5132,10 +5126,6 @@
 /obj/landmark/spawner/loot,
 /turf/simulated/floor/plating/damaged3,
 /area/evilreaver/genetics)
-"Pl" = (
-/obj/grille/steel,
-/turf/simulated/floor/plating/airless,
-/area/station/solar/small_backup3)
 "Pm" = (
 /obj/decal/cleanable/fungus,
 /turf/simulated/wall/auto/reinforced/old,
@@ -5183,13 +5173,6 @@
 "PC" = (
 /turf/simulated/wall/auto/reinforced/supernorn,
 /area/mining/dock)
-"PD" = (
-/obj/plasticflaps,
-/obj/machinery/conveyor/NS{
-	id = "MINSouth"
-	},
-/turf/simulated/floor/plating,
-/area/mining/manufacturing)
 "PK" = (
 /obj/grille/catwalk{
 	dir = 4
@@ -5203,6 +5186,16 @@
 	dir = 4
 	},
 /area/mining/mainasteroid)
+"PO" = (
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/obj/decal/cleanable/gangtag{
+	icon_state = "gangtag12";
+	pixel_x = 28
+	},
+/turf/simulated/floor,
+/area/mining/manufacturing)
 "PP" = (
 /obj/stool/chair{
 	dir = 8
@@ -5590,13 +5583,6 @@
 	},
 /turf/simulated/floor/delivery,
 /area/mining/miningoutpost)
-"SB" = (
-/obj/decal/cleanable/dirt,
-/obj/machinery/computer/transit_shuttle/johnbus{
-	dir = 4
-	},
-/turf/simulated/floor/plating/damaged3,
-/area/mining/miningoutpost)
 "SC" = (
 /obj/machinery/door/airlock/pyro/engineering{
 	dir = 4;
@@ -5959,6 +5945,19 @@
 "UM" = (
 /turf/simulated/martian/floor,
 /area/noGenerate)
+"UN" = (
+/obj/machinery/conveyor/NS{
+	id = "MINSouth"
+	},
+/obj/machinery/door/poddoor{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "MINdoorS";
+	name = "South Conveyor Door";
+	opacity = 0
+	},
+/turf/simulated/floor/plating/airless,
+/area/mining/manufacturing)
 "UP" = (
 /obj/stool/chair,
 /obj/machinery/light/incandescent,
@@ -15629,7 +15628,7 @@ vw
 Gv
 IS
 Yy
-cm
+vW
 St
 xM
 IB
@@ -49172,7 +49171,7 @@ aX
 XD
 Fu
 eT
-Gq
+fh
 XD
 ce
 ab
@@ -51601,7 +51600,7 @@ zP
 GA
 GA
 sP
-ax
+FA
 RO
 ya
 ya
@@ -53144,7 +53143,7 @@ Kc
 Kc
 Kc
 Cv
-SB
+sS
 BL
 Cv
 Cx
@@ -53713,32 +53712,32 @@ Mb
 yl
 xN
 nq
-Ij
-PD
-hA
-lp
-lp
-lp
-lp
-lp
-cB
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
-BH
+PO
+Dy
+Nu
+wL
+wL
+wL
+wL
+wL
+UN
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
+Av
 PK
 aY
 aY
@@ -54879,9 +54878,9 @@ aa
 ab
 ab
 ab
-Pl
-Pl
-Pl
+qn
+qn
+qn
 ab
 ab
 WF
@@ -55181,7 +55180,7 @@ aa
 ab
 ab
 ab
-Pl
+qn
 KA
 ET
 ab
@@ -55483,7 +55482,7 @@ aa
 ab
 ab
 ab
-Pl
+qn
 FD
 AA
 wj
@@ -55785,7 +55784,7 @@ aa
 ab
 ab
 ab
-Pl
+qn
 KA
 ET
 ab
@@ -56087,9 +56086,9 @@ aa
 ab
 ab
 ab
-Pl
-Pl
-Pl
+qn
+qn
+qn
 ab
 ab
 WF

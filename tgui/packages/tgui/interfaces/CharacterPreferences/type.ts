@@ -31,7 +31,6 @@ export interface CharacterPreferencesData {
   flavorText: string;
   securityNote: string;
   medicalNote: string;
-  syndintNote: string;
   fartsound: string;
   screamsound: string;
   chatsound: string;

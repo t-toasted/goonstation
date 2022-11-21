@@ -29,7 +29,7 @@
 		/obj/item/paper_bin,
 		/obj/item/item_box/gold_star,
 		/obj/item/storage/box/costume/hotdog,
-		/mob/living/critter/small_animal/cockroach,
+		/obj/critter/roach,
 		/obj/item/device/light/flashlight,
 		/obj/item/kitchen/utensil/knife,
 		/obj/item/staple_gun,

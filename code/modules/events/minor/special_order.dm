@@ -34,10 +34,7 @@
 			new_order.pack_crate()
 			shippingmarket.receive_crate(new_order.sendingCrate)
 		else
-			if(transception_array)
-				transception_array.direct_queue += new_order.req_sheet
-			else
-				shippingmarket.receive_crate(new_order.req_sheet)
+			shippingmarket.receive_crate(new_order.req_sheet)
 
 /obj/item/paper/requisition
 	name = "Order Requisition"

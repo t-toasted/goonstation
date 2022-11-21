@@ -28,22 +28,22 @@ TYPEINFO(/datum/component/conveyorplacer)
 	if (!oldC)
 		oldC = new /obj/machinery/conveyor(oldLoc)
 		oldC.id = conv_id
-		oldC.dir_out = opposite_dir
+		oldC.dir2 = opposite_dir
 		src.conveyors |= oldC
 
 	if (!newC)
 		newC = new /obj/machinery/conveyor(newLoc)
 		newC.id = conv_id
-		newC.dir_in = direct
+		newC.dir1 = direct
 		src.conveyors |= newC
 
 	if (oldC.id == conv_id)
-		if (oldC.dir_out != direct)
-			oldC.dir_in = direct
+		if (oldC.dir2 != direct)
+			oldC.dir1 = direct
 		oldC.update()
 
 	if (newC.id == conv_id)
-		if (newC.dir_in != opposite_dir)
-			newC.dir_out = opposite_dir
+		if (newC.dir1 != opposite_dir)
+			newC.dir2 = opposite_dir
 		newC.update()
 
